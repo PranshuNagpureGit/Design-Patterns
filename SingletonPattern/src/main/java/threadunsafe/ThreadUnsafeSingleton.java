@@ -1,3 +1,5 @@
+package threadunsafe;
+
 /**
  * This class will create multiple objects in a multi-threaded scenario.
  * This class uses lazy initialization

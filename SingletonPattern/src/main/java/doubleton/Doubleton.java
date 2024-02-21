@@ -1,3 +1,5 @@
+package doubleton;
+
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
