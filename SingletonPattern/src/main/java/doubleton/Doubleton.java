@@ -8,8 +8,8 @@ import java.util.concurrent.atomic.AtomicLong;
  * and in every odd call of getInstance() return the second instance
  * */
 public class Doubleton {
-    private static Doubleton instance_1;
-    private static Doubleton instance_2;
+    private static volatile Doubleton instance_1;
+    private static volatile Doubleton instance_2;
     private static volatile AtomicLong invocations;
 
     private Doubleton() {};
