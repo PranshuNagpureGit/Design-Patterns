@@ -16,7 +16,9 @@ package threadsafe;
  * */
 public class EagerInitializationSingleton {
     private static final EagerInitializationSingleton INSTANCE = new EagerInitializationSingleton();
-    private EagerInitializationSingleton(){};
+    private EagerInitializationSingleton(){
+        System.out.println("Created");
+    };
 
     public static EagerInitializationSingleton getInstance() {
         return INSTANCE;
